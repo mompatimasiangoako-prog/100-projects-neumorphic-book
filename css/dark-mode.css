@@ -1,0 +1,283 @@
+/* ===========================
+   DARK MODE SYSTEM
+   =========================== */
+
+body.dark-mode {
+    background-color: var(--color-bg-primary);
+}
+
+/* Dark Mode - Navbar */
+body.dark-mode .navbar {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .nav-btn {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .nav-btn:hover {
+    box-shadow: 
+        0 12px 24px rgba(255, 255, 255, 0.08),
+        0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .nav-btn:active {
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+/* Dark Mode - Book Cover */
+body.dark-mode .book-cover {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .cover-background {
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(155, 139, 184, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(155, 139, 184, 0.08) 0%, transparent 50%);
+}
+
+body.dark-mode .cover-title {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .cover-subtitle {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .stat-value {
+    color: var(--color-accent-light);
+}
+
+body.dark-mode .stat-label {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .cover-decorative {
+    color: var(--color-accent-light);
+    opacity: 0.15;
+}
+
+/* Dark Mode - Progress */
+body.dark-mode .progress-track {
+    background-color: var(--color-bg-secondary);
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+body.dark-mode .progress-fill {
+    background: linear-gradient(90deg, #9B8BB8, #B5A3D0);
+    box-shadow: 0 0 12px rgba(155, 139, 184, 0.3);
+}
+
+body.dark-mode .progress-text {
+    color: var(--color-text-secondary);
+}
+
+/* Dark Mode - Controls */
+body.dark-mode .page-controls {
+    border-top-color: var(--color-bg-secondary);
+}
+
+body.dark-mode .control-btn {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .control-btn:hover:not(:disabled) {
+    box-shadow: 
+        0 12px 24px rgba(255, 255, 255, 0.08),
+        0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .control-btn:active:not(:disabled) {
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+/* Dark Mode - Page Header */
+body.dark-mode .page-header h2 {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .page-description {
+    color: var(--color-text-secondary);
+}
+
+/* Dark Mode - Cards */
+body.dark-mode .raised {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .raised:hover {
+    box-shadow: 
+        0 12px 24px rgba(255, 255, 255, 0.08),
+        0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .raised:active {
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+body.dark-mode .inset {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+body.dark-mode .inset:focus {
+    outline: none;
+    box-shadow: 
+        var(--shadow-inset-light), 
+        var(--shadow-inset-dark),
+        0 0 0 3px var(--color-accent-light);
+}
+
+/* Dark Mode - Progress Circle */
+body.dark-mode .progress-bg {
+    fill: var(--color-bg-secondary);
+    stroke: none;
+}
+
+body.dark-mode .progress-circle-fill {
+    stroke: url(#gradientDark);
+}
+
+/* Dark Mode - Text Elements */
+body.dark-mode code {
+    background-color: var(--color-bg-secondary);
+    color: #E8E8E8;
+}
+
+/* ===========================
+   DARK MODE TRANSITION
+   =========================== */
+
+body {
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+body.dark-mode,
+body.dark-mode .navbar,
+body.dark-mode .book-cover,
+body.dark-mode .nav-btn,
+body.dark-mode .control-btn,
+body.dark-mode .raised,
+body.dark-mode .inset {
+    transition: 
+        background-color var(--transition-base),
+        color var(--transition-base),
+        box-shadow var(--transition-base),
+        border-color var(--transition-base);
+}
+
+/* ===========================
+   STAT CARDS - DARK MODE
+   =========================== */
+
+body.dark-mode .stat-card {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .stat-card:hover {
+    box-shadow: 
+        0 12px 24px rgba(255, 255, 255, 0.08),
+        0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* ===========================
+   PROJECT CARD - DARK MODE
+   =========================== */
+
+body.dark-mode .project-card {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .project-card:hover {
+    box-shadow: 
+        0 12px 24px rgba(255, 255, 255, 0.08),
+        0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .project-header {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .project-image-container {
+    background-color: var(--color-bg-secondary);
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+body.dark-mode .project-info {
+    color: var(--color-text-secondary);
+}
+
+/* ===========================
+   SKILL TAGS - DARK MODE
+   =========================== */
+
+body.dark-mode .skill-tag {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .skill-tag:hover {
+    box-shadow: 
+        0 12px 24px rgba(255, 255, 255, 0.08),
+        0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .skill-tag.selected {
+    color: var(--color-accent-light);
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+/* ===========================
+   MODAL - DARK MODE
+   =========================== */
+
+body.dark-mode .modal-content {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+}
+
+body.dark-mode .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .modal-close {
+    color: var(--color-text-primary);
+}
+
+/* ===========================
+   INPUT & TEXTAREA - DARK MODE
+   =========================== */
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: none;
+    box-shadow: var(--shadow-inset-light), var(--shadow-inset-dark);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+    outline: none;
+    box-shadow: 
+        var(--shadow-inset-light), 
+        var(--shadow-inset-dark),
+        0 0 0 3px var(--color-accent-light);
+}
