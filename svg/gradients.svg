@@ -1,0 +1,21 @@
+<svg width="0" height="0" style="display: none;">
+  <defs>
+    <!-- Light mode gradient -->
+    <linearGradient id="gradientLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B5B95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B8BB8;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Dark mode gradient -->
+    <linearGradient id="gradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B8BB8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B5A3D0;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Success gradient -->
+    <linearGradient id="gradientSuccess" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7CB342;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9CCC65;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
